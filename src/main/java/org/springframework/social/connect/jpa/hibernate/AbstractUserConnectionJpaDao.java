@@ -28,7 +28,7 @@ public abstract class AbstractUserConnectionJpaDao<U extends AbstractUserConnect
 		return persistentClass;
 	}
 
-	@PersistenceContext(unitName = "persistenceUnit")
+	@PersistenceContext
 	private EntityManager entityManager;
 
 	public AbstractUserConnectionJpaDao(Class<U> persistentClass) {
